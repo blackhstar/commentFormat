@@ -8,7 +8,10 @@ import (
 )
 
 func main() {
+	createComment()
+}
 
+func createComment() {
 	file, err := os.Open("file.txt")
 	if err != nil {
 		log.Fatal(err)
